@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+main {
+  flex: 1;
+  background-color: #f0f3f7;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  min-width: 0px;
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #c7cbd8;
+  border-radius: 4px;
+}
+
+button {
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.small {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+button.large {
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+button.primary {
+  background-color: #089ea9;
+}
+
+button.primary:hover {
+  background-color: #027d86;
+}
+
+button.secondary {
+  background-color: #a8b1bd;
+}
+
+button.secondary:hover {
+  background-color: #8692a0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: red;
+  text-align: left;
+}
+
+tr {
+  border: 1px solid #e5e7eb;
+}
+
+th {
+  padding: 12px 8px;
+  background-color: #f9fafb;
+}
+
+tbody {
+  background-color: white;
+}
+
+td {
+  padding: 16px 8px;
+}
+
+td.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+    padding: 8px 80px;
+  }
+
+  main {
+    gap: 36px;
+  }
+
+  form {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
